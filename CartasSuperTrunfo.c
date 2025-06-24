@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <windows.h>
+
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -14,7 +15,7 @@ int main() {
     char estado2[20];
     char codigo[29]; // definindo o tamanho maximo do codigo 
     char codigo2[29];
-    char nomedaCidade[50]; // definindo o tamanho maximo do nome da cidade 
+    char nomeDaCidade[50]; // definindo o tamanho maximo do nome da cidade 
     char nomeDaCidade2[50];
     int populacao; // definido o tipo de dado inteiro da população 
     int populacao2;
@@ -30,7 +31,7 @@ int main() {
     printf("Digite o código da carta: \n"); // solicitar ao usuário que digite o codigo da carta 
     scanf(" %[^\n]", codigo); // ler a entrada do usuário, permitindo espaços 
     printf("Digite o nome da primeira cidade: \n"); // solicitar ao usuário que digite o nome da cidade
-    scanf(" %[^\n]", nomedaCidade); // ler a entrada do usuário, permitindo espaços 
+    scanf(" %[^\n]", nomeDaCidade); // ler a entrada do usuário, permitindo espaços 
     printf("Digite a população da cidade: \n");// solicitar ao usuário que digite a população do estado 
     scanf("%d", &populacao);// ler a entrada do usuário, permitindo espaços 
     printf("Digite a área do estado: \n");// solicitar ao usuário que digite a área do estado 
@@ -57,7 +58,7 @@ int main() {
 
     printf("Estado: %s \n", estado); 
     printf("Código da carta: %s \n", codigo);
-    printf("nome da cidade: %s \n", nomedaCidade);
+    printf("nome da cidade: %s \n", nomeDaCidade);
     printf("População: %d \n", populacao);
     printf("Área: %.2f km² \n", area);
     printf("PIB: %.2f bilhões de reais \n", PIB);
