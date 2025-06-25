@@ -34,7 +34,7 @@ int main() {
     scanf(" %[^\n]", nomeDaCidade); // ler a entrada do usuário, permitindo espaços 
     printf("Digite a população da cidade: \n");// solicitar ao usuário que digite a população do estado 
     scanf("%d", &populacao);// ler a entrada do usuário, permitindo espaços 
-    printf("Digite a área do estado: \n");// solicitar ao usuário que digite a área do estado 
+    printf("Digite a área da cidade: \n");// solicitar ao usuário que digite a área do estado 
     scanf("%f", &area);// ler a entrada do usuário, permitindo espaços
     printf("Digite o PIB do estado: \n");// solicitar ao usuário que digit o PIB pdo estado
     scanf("%f", &PIB);// ler a entrada do usuário, permitindo espaços 
@@ -56,6 +56,7 @@ int main() {
     printf("Digite a segunda quantidade de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos2);   
 
+    printf("\n-----primeira carta-----\n");
     printf("Estado: %s \n", estado); 
     printf("Código da carta: %s \n", codigo);
     printf("nome da cidade: %s \n", nomeDaCidade);
@@ -64,6 +65,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais \n", PIB);
     printf("Pontos turísticos: %d \n", pontosTuristicos);
 
+    printf("\n-----segunda carta-----\n");
     printf("Estado: %s \n", estado2);
     printf("Código da carta: %s\n", codigo2);
     printf("Nome da cidade: %s \n", nomeDaCidade2);
@@ -87,4 +89,5 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
 
