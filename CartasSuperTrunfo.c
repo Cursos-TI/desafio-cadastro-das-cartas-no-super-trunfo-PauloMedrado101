@@ -1,13 +1,15 @@
 #include <stdio.h>
-#include <locale.h>
 #include <windows.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
+
+
+#include <windows.h> // Adicione esta linha para usar funções do Windows
+
 int main() {
-    SetConsoleOutputCP(65001); // Configura a saída do console para UTF-8
-    setlocale(LC_ALL, "Portuguese");
+    
+    SetConsoleOutputCP(65001); // Configura a saída para UTF-8
+    SetConsoleCP(65001);       // Configura a entrada para UTF-8 (útil para scanf)
+
 
 
 
