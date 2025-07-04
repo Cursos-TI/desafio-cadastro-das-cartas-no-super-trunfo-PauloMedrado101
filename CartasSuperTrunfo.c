@@ -6,18 +6,27 @@
 #include <windows.h> // Adicione esta linha para usar funções do Windows
 
 int main() {
-    
+     
     SetConsoleOutputCP(65001); // Configura a saída para UTF-8
     SetConsoleCP(65001);       // Configura a entrada para UTF-8 (útil para scanf)
 
+    //estado 01 : São Paulo 
+    // cidade 01: São Paulo
+    // pib da primeira cidade 829 bilhões de reais 
+    // área da primeira cidade 1.521 km²
+    // população da primeira cidade 11.451.999 habitantes 
 
+    //estado02: Rio de Janeiro
+    //Cidade 02: Rio de Janeiro
+    //PIB da segunda cidade 359,6 Bilhões de reais 
+    // área da segunda cidade 1.200 km²
+    // população da segunda cidade 6.729.894 habitantes 
 
-
-    char estado[20]; // definindo o tamanho maximo do estado 
+    char estado[20]; // qual e o estado 
     char estado2[20];
-    char codigo[29]; // definindo o tamanho maximo do codigo 
+    char codigo[29]; // definindo o codigo da carta 
     char codigo2[29];
-    char nomeDaCidade[50]; // definindo o tamanho maximo do nome da cidade 
+    char nomeDaCidade[50]; // qual a cidade 
     char nomeDaCidade2[50];
     int populacao; // definido o tipo de dado inteiro da população 
     int populacao2;
@@ -27,6 +36,7 @@ int main() {
     float PIB2;
     int pontosTuristicos; // definindo o tipo de dado inteiro dos ppontos turisticos 
     int pontosTuristicos2;
+   
 
     printf("Digite o estado: \n"); // solicitar ao usuário que digite o estado 
     scanf(" %[^\n]", estado);// ler a entrada do usuário, permitindo espaços 
@@ -58,6 +68,11 @@ int main() {
     printf("Digite a segunda quantidade de pontos turísticos: \n");
     scanf("%d", &pontosTuristicos2);   
 
+    float densidadepopulacional1 = populacao / area;
+    float densidadepopulacional2 = populacao2 / area2;
+    float pibpercapita1 = PIB / populacao;
+    float pibpercapita2 = PIB2 / populacao2;
+
     printf("\n-----primeira carta-----\n");
     printf("Estado: %s \n", estado); 
     printf("Código da carta: %s \n", codigo);
@@ -66,6 +81,10 @@ int main() {
     printf("Área: %.2f km² \n", area);
     printf("PIB: %.2f bilhões de reais \n", PIB);
     printf("Pontos turísticos: %d \n", pontosTuristicos);
+    printf("Densidade populacional: %.2f habitantes por km²\n", densidadepopulacional1);
+    printf("PIB per capita: %.2f reais por habitante\n", pibpercapita1);
+
+
 
     printf("\n-----segunda carta-----\n");
     printf("Estado: %s \n", estado2);
@@ -75,6 +94,8 @@ int main() {
     printf("Área: %.2f km² \n", area2);
     printf("PIB: %.2f bilhões de reais \n", PIB2);
     printf("Pontos turísticos: %d \n", pontosTuristicos2);
+    printf("Densidade populacional: %.2f habitantes por km²\n", densidadepopulacional2);
+    printf("PIB per capita: %.2f reais por habitante\n", pibpercapita2);
 
     return 0;
 }
